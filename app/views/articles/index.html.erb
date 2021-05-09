@@ -15,7 +15,7 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.description %></td>
-      <td>Some Actions </td>
+      <td><%= link_to "Delete", article_path(article), method: :delete %> </td>
     </tr>
     <% end %>
   </tbody>
