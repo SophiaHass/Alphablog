@@ -1,1 +1,12 @@
-<br><br><br>hello world!
+<h1>Home</h1>
+
+<% hello = ["Hi", "Greetings", "Hello", "Saluton", "Hola", "Guten Tag", "Bonjour", "Ciao", "Dzien dobry"] %>
+
+<% world = ["world", "mondo", "Earth", "Pachamama", "Gaia", "Welt", "monde", "mundo", "third rock from the sun"] %>
+
+<%= hello[rand(0..8)] %> <%= world[rand(0..8)] %><%= "!" %>
+
+<p>
+
+<%= link_to "Articles Listing", articles_path %> |
+<%= link_to "About Page", about_path %>
