@@ -1,5 +1,11 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+html {
+
+  background-color: #000000;
+
+
+}
 
 .navbar {
 
@@ -7,6 +13,11 @@
   
 }
   
+h1, h2, h3 {
+
+  color: rgb(255, 174, 0); 
+
+}
 
 #logo {
 
@@ -23,21 +34,30 @@
 
 }
 
-.home, .treasuretext {
+#home, .treasuretext {
 
   text-align: center
 
 }
 
 
-.treasure {
+#footer {
 
-  size: 75vh;
+  background-color: black !important;
+  padding: 5%;
+  color: rgb(255, 238, 200) !important;
 
 }
 
-.footer {
 
-  font-size: 75%;
 
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
 }

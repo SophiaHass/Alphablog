@@ -1,16 +1,20 @@
-<div class="jumbotron home">
-  <h1 class="display-4">ALPHABLOG</h1>
-  <p class="lead">
-  
-<!-- begin helloworldinator --> <% hello = ["Hi", "Greetings", "Hello", "Saluton", "Hola", "Guten Tag", "Bonjour", "Ciao", "Dzien dobry"] %>
-<% world = ["world", "mondo", "Earth", "Pachamama", "Gaia", "Welt", "monde", "mundo", "third rock from the sun"] %>
-<%= hello[rand(0..8)] %> <%= world[rand(0..8)] %><%= "!" %><!-- end helloworldinator --></p>
-  
-    <hr class="my-4">
-    <div class="treasure"><%= image_tag "treasure.jpg", size: "900x400", alt: "A pile of gold coins" %></div>  
-    <p><br>Alpha Blog is the testiest test app in the history of everything ever. It not only says "hello world", it screams "HELLO WORLD" into the heavens and beyond.</p>
-    <br><a class="btn btn-warning btn-lg" href="/about" role="button">Learn more</a>
-  
-</div>
 
+
+
+
+
+  <div class="jumbotron" id="home">
+    <h1 class="display-4">ALPHABLOG</h1>
+    <p class="lead">
+    
+  <!-- begin helloworldinator --> <% hello = ["Hi", "Greetings", "Hello", "Saluton", "Hola", "Guten Tag", "Bonjour", "Ciao", "Dzien dobry"] %>
+  <% world = ["world", "mondo", "Earth", "Pachamama", "Gaia", "Welt", "monde", "mundo", "third rock from the sun"] %>
+  <%= hello[rand(0..8)] %> <%= world[rand(0..8)] %><%= "!" %><!-- end helloworldinator --></p>
+    
+      <hr class="my-4">
+      <div class="treasure"><%= image_tag "treasure.jpg", size: "900x400", alt: "A pile of gold coins" %></div>  
+      <p><br>Alpha Blog is the testiest test app in the history of everything ever. It not only says "hello world", it screams "HELLO WORLD" into the heavens and beyond.</p>
+      <br><a class="btn btn-warning btn-lg" href="/about" role="button">Learn more</a>
+    
+  </div>
 
