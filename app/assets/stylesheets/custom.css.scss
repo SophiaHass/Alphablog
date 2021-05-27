@@ -1,55 +1,62 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-html {
+body {
 
-  background-color: #000000;
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,4,25,1) 100%);
 
-
+  color: rgb(255, 238, 200);
 }
 
-.navbar {
-
-  background-color: #000000 !important;
-  
-}
-  
 h1, h2, h3 {
 
   color: rgb(255, 174, 0); 
 
 }
 
+.navbar {
+
+  background-color: inherit !important;
+  
+}
+  
 #logo {
 
   color: rgb(255, 174, 0); 
 
 }
 
-.jumbotron {
+#home, .treasuretext {
 
+  text-align: center;
   color:rgb(255, 238, 200);
-  background-color: black;
+  background-color: inherit;
+  padding-left: 7%;
+  padding-right: 7%;
   margin-top: 0;
   margin-bottom: 0;
 
 }
 
-#home, .treasuretext {
+#treasure {
 
-  text-align: center
+  background-image: url("treasure.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vh;
+  width: 100vh;
+  margin: auto;
 
 }
-
 
 #footer {
 
-  background-color: black !important;
-  padding: 5%;
-  color: rgb(255, 238, 200) !important;
+  background-color: inherit !important;
+  padding: 7%;
+  color: rgb(170, 159, 136) !important;
+  text-align: left !important;
 
 }
-
-
 
 
 .Site {
