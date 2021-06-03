@@ -2,13 +2,13 @@
 
 body {
 
-  background: rgb(0,0,0);
+background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,4,25,1) 100%);
 
   color: rgb(255, 238, 200);
 }
 
-h1, h2, h3 {
+h1, h2, h3, a, a:hover, a:visited, a:active {
 
   color: rgb(255, 174, 0); 
 
@@ -67,4 +67,20 @@ h1, h2, h3 {
 
 .Site-content {
   flex: 1;
+}
+
+.card-header, .card-footer {
+
+  background-color: rgb(43, 43, 43);
+
+}
+
+.card {
+  border-color: black;
+}
+
+.btn:link, .btn:active, .btn:hover, .btn:visited {
+
+  color: rgb(255, 238, 200) !important;
+
 }
