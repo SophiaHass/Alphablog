@@ -1,9 +1,30 @@
-<h1>showing article details </h1>
+<div class="container mt-4">
 
-Title: <%= @article.title %>
-<p>Description: <%= @article.description %>
+<h1 class="mb-4 col-12">Showing Article Details </h1>
 
-<p> <br>
-<%= link_to "Edit", edit_article_path(@article) %> | 
-<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %> |
-<%= link_to "Return To Articles Listing", articles_path %>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-11 mt-4">
+      <div class="card text-center border-0">
+        <div class="card-header font-italic">
+          by Sophia
+        </div>
+        <div class="card-body bg-dark">
+          <h5 class="card-title"><%= @article.title %></h5>
+          <div class="card-text text-left"> <%= simple_format(@article.description) %></div>
+          <%= link_to "Edit", edit_article_path(@article) %> | 
+<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %> 
+
+        </div>
+
+        <div class="card-footer text-muted">
+          <small>Created <%= time_ago_in_words(@article.created_at) %> ago, updated <%= time_ago_in_words(@article.updated_at) %> ago </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<p> <br><br><br>
+<%= render "backto" %>
+
+</div>
